@@ -1,0 +1,9 @@
+<%= form_for(@task) do |f| %>
+ <%= f.label :name %>
+ <%= f.text_field :name, placeholder: 'type your name...' %>
+
+ <%= f.label :status %>
+ <%= f.text_field :status, placeholder: 'true or false' %>
+
+ <%= f.submit %>
+<% end %>

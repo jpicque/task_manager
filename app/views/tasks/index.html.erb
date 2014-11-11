@@ -1,0 +1,9 @@
+<h1>My tasks list</h1>
+
+<% @tasks.each do |task| %>
+  <ul>
+    <li><%= task.name %> - <%= task.status %> - <%= link_to "show", task_path(task)%></li>
+  </ul>
+<% end %>
+
+<a href="http://localhost:3000/tasks/new.html">Créer nouvelle tâche</a>
